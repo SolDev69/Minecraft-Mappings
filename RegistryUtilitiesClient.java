@@ -2,7 +2,7 @@ package @package@;
 
 import dev.architectury.event.events.client.ClientLifecycleEvent;
 import dev.architectury.event.events.client.ClientPlayerEvent;
-import dev.architectury.event.events.client.ClientTextureStitchEvent;
+//import dev.architectury.event.events.client.ClientTextureStitchEvent;
 import dev.architectury.event.events.client.ClientTickEvent;
 import dev.architectury.registry.client.rendering.BlockEntityRendererRegistry;
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
@@ -59,6 +59,6 @@ public interface RegistryUtilitiesClient {
 	}
 
 	static void registerTextureStitchEvent(Consumer<TextureAtlas> consumer) {
-		ClientTextureStitchEvent.POST.register(consumer::accept);
+		//ClientTextureStitchEvent.POST.register(consumer::accept);
 	}
 }
